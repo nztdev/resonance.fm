@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <title>Resonance.FM</title>
-  <link rel="icon" type="image/png" href="https://radiopumpo.github.io/radiopumpologo.png">
   <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Space+Mono:wght@400;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -356,7 +355,7 @@
   <nav class="top-nav">
     <a href="#" class="nav-brand">RESONANCE<span>.FM</span></a>
     <div class="nav-right">
-      <a href="index.html" class="nav-link">← Tools</a>
+      <a href="https://nztdev.github.io/" class="nav-link">← nztdev</a>
     </div>
   </nav>
 
@@ -1291,7 +1290,7 @@ function exportNebula(){
 
 function shareNebula(){
   const artistList=nodes.slice(0,5).map(n=>n.name).join(', ');
-  const text=currentUsername?'My music taste mapped as a nebula — '+artistList+' and more. Try yours: https://radiopumpo.github.io/pumpo-tools/resonancefm.html':'Mapped my music taste as a nebula — '+artistList+' · Resonance.FM: https://radiopumpo.github.io/pumpo-tools/resonancefm.html';
+  const text=currentUsername?'My music taste mapped as a nebula — '+artistList+' and more. Try yours: https://nztdev.github.io/resonancefm.html':'Mapped my music taste as a nebula — '+artistList+' · Resonance.FM: https://nztdev.github.io/resonancefm.html';
   navigator.clipboard.writeText(text).catch(()=>{});
 }
 
